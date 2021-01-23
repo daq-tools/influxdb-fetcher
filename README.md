@@ -18,6 +18,12 @@ influxdb-fetcher \
     "SELECT station_type, latitude, longitude, aqi_value FROM testdrive GROUP BY station_type LIMIT 100"
 ```
 
+## Setup
+```sh
+wget --no-clobber --output-document=/usr/local/bin/influxdb-fetcher https://raw.githubusercontent.com/daq-tools/influxdb-fetcher/develop/bin/influxdb-fetcher
+chmod +x /usr/local/bin/influxdb-fetcher
+```
+
 
 ## Advanced usage
 
